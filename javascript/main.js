@@ -76,14 +76,14 @@ new_div1.innerHTML =
 
     container_div_active = container_div_active + 1 
 
-    bottone2.classList.remove ("hidden");
+    
 
     // aggiungo la classe active
 
     container_div[container_div_active].classList.add ("active");
 }  
         // lo nascondo se sono all'ultima immagine
-    if (container_div_active === (container_div.length - 1)) {
+      else {
 
         container_div[container_div_active].classList.remove ("active");
         // vado al prima div
@@ -116,13 +116,15 @@ function(){
    // vado al div successivo
 
    container_div_active = container_div_active - 1  
-   
-} 
+
    // aggiungo la classe active
 
    container_div[container_div_active].classList.add ("active");
+   
+} 
+   
        // lo nascondo se sono all'ultima immagine
-   if (container_div_active === 0) {
+    else {
     container_div[container_div_active].classList.remove ("active");
     // vado al prima div
 
